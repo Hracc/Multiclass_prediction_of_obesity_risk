@@ -101,3 +101,46 @@ NObeyesdad:
     - "Obesity_Type_I"
     - "Obesity_Type_II"
     - "Obesity_Type_III"
+NObeyesdad_norm:
+  description_en: "Obesity level norm"
+  description_ru: "Уровень ожирения нормализованный"
+  short_ru: "Уровень ожир. норм."
+  group_ru: "Целевая переменная"
+  order:
+    - "Insufficient_Weight"
+    - "Normal_Weight"
+    - "Overweight"
+    - "Obesity"
+  mapping:
+    Insufficient_Weight: Insufficient_Weight
+    Normal_Weight: Normal_Weight
+    Overweight_Level_I: Overweight
+    Overweight_Level_II: Overweight
+    Obesity_Type_I: Obesity
+    Obesity_Type_II: Obesity
+    Obesity_Type_III: Obesity
+  categories:
+    Insufficient_Weight:
+      description_ru: "Недостаточный вес"
+      description_en: "Insufficient_Weight"
+      bmi_range: "< 18.5"
+      bmi_min: 0
+      bmi_max: 18.5
+    Normal_Weight:
+      description_ru: "Норма"
+      description_en: "Normal_Weight"
+      bmi_range: "18.5–24.9"
+      bmi_min: 18.5
+      bmi_max: 25.0
+    Overweight:
+      description_ru: "Избыточный вес"
+      description_en: "Overweight"
+      bmi_range: "25.0–29.9"
+      bmi_min: 25.0
+      bmi_max: 30.0
+    Obesity:
+      description_ru: "Ожирение"
+      description_en: "Obesity"
+      bmi_range: "≥ 30.0"
+      bmi_min: 30.0
+      bmi_max: null
